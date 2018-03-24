@@ -27,9 +27,9 @@ feature_names <- read.table(paste0(har_data_path, "features.txt"))[,2]
 names(feature_vectors_df) <- feature_names
 
 # Extract only mean and std feature measurements
-mean_logical <- grepl(".*?mean\\(\\).*", feature_names)
-std_logical <- grepl(".*?std\\(\\).*", feature_names)
-feature_vectors_df <- feature_vectors_df[, (mean_logical | std_logical)]
+mean_lgl <- grepl(".*?mean\\(\\).*", feature_names)
+std_lgl <- grepl(".*?std\\(\\).*", feature_names)
+feature_vectors_df <- feature_vectors_df[, (mean_lgl | std_lgl)]
 
 # Read activity names from data
 activity_names <- read.table(paste0(har_data_path, "activity_labels.txt"))[,2]
