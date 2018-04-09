@@ -56,4 +56,4 @@ feature_means_tbl$signaltype[feature_means_tbl$signaltype == "f"] <- "frequency"
 feature_means_tbl[3:6] <- lapply(feature_means_tbl[3:6], as.factor)
 
 # Save result
-write.csv(data.frame(feature_means_tbl), file="uci_har_analysis.csv", row.names = F)
+write.table(data.frame(feature_means_tbl), file="uci_har_analysis.txt", row.names = F)

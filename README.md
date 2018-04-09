@@ -11,4 +11,4 @@ Analysis of movement data recorded from waist-mounted smartphones. ([UCI](http:/
 - `CodeBook.md`: Description of transformations applied on original data + description of variables and data in the resulting dataset. 
 - `download_dataset.R`: Script to download underlying dataset 
 - `run_analysis.R`: Script to perform analysis on downloaded dataset
-- `uci_har_analysis.csv`: Resulting dataset
+- `uci_har_analysis.txt`: Resulting dataset
